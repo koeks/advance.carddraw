@@ -1,0 +1,19 @@
+plugins {
+    id 'java'
+}
+
+repositories {
+    jcenter()
+}
+
+dependencies {
+    testImplementation 'junit:junit:4.13.1'
+}
+
+application {
+    mainClassName = 'src.main.java.PokerGame' 
+}
+
+tasks.named('test') {
+    useJUnitPlatform()
+}
